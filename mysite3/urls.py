@@ -20,5 +20,8 @@ from clothes import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('clothes.urls')),
+    
+    path('users/',include('users.urls')),
+    path('profiles',include('profiles.urls'))
 
 ]
